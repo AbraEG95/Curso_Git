@@ -1,0 +1,61 @@
+Comando en Linux
+cd (Carpeta)
+cd .. (Retroceder Carpetas)
+ls (Mostrar contenido)
+mkdir (Crear Carpeta)
+mv (Nombre Antiguo) (Nombre Nuevo)'Archivo'
+touch (Nombre archivo)
+\ (Espacio en el nombre)
+clear (Limpieza del terminal)
+
+Abrir Visual Code
+code .
+
+Comando de Git
+
+git -h    (Help)
+	(Comando de config global)
+git config --global user.name "usuario"
+git config --global user.mail "correo"
+	(Inicializacion)
+git init (Crea Carpeta Oculta de git)
+git status (Estado del archivo)
+git add archivo.py (Agregar el fichero temporal)
+git add . (Agregas todos los ficheros pendientes)
+git commit -m "comentarios" (Cierras los cambios)
+git checkout archivo.py (Apuntas un punto anterior)
+git checkout head (Encabezas un punto en especifico)
+git resert (Regresas al punto de origen)
+git resert --hard nombre.py (forsas a un punto especifico o recuperar el archivo)
+git log (Historico de movimentos)
+	git log --graph (con graficos)
+	git log --graph --pretty=oneline (breve)
+	git log --graph --decorate --all --oneline(mas breve)
+git reflog (Historial completo)
+git config --global alias.nombre "Indicacion de hacer" (agregar comandos rapidos como "log --graph --pretty=oneline")
+git diff (muestra el historico antes de hacer la fotografia)
+git head (muestra el punto inicial)
+git tag nombre_tag (Se agrega un tag o sobre nombre al ultimo encabezado)
+git branch nombre (Crear una nueva rama)
+git branch -d nombre (Eliminar rama)
+git switch nombre (Cambias de rama)
+git merge nombre_rama (combinar entre ramas)
+git stash (commit temporal)
+	git stash list (lista de pendientes)
+	git stash pop (extrae los cambios)
+	git stash drop (elimina los stash)
+
+touch .gitignore (Archivo para ignorar otros archivos, agregandolos con **/nombre.py)
+
+
+--------Portal Web Sincronizacion --------------
+git push -u origin main (Sicroniza con github "Tienes que cambiarle el nombre a main")
+git fetch (Descarga el Historial sin los cambios)
+git pull (Descarga el Historial con los cambios)
+git clone SSH o HTTPS (Descarga los archivos)
+
+--------Git Flow-------------
+brew install git-flow (Instalas el flujo de Git Flow)
+git flow init (Creas las secciones de flujo)
+git flow rama-gitglow start nombre-rama (Inicias y creas una nueva rama)
+git flow rama-gitglow finish nombre-rama (Paras el proceso de la nueva rama)
