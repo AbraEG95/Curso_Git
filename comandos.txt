@@ -49,6 +49,8 @@ touch .gitignore (Archivo para ignorar otros archivos, agregandolos con **/nombr
 
 
 --------Portal Web Sincronizacion --------------
+git remote add origin nombre_del_repositorio_de_GitHub (Sincronizacion de carpeta local con github)
+git remote remove origin   (Borra la referencia a GitHub)
 git push -u origin main (Sicroniza con github "Tienes que cambiarle el nombre a main")
 git fetch (Descarga el Historial sin los cambios)
 git pull (Descarga el Historial con los cambios)
